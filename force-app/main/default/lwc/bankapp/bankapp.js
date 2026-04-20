@@ -11,4 +11,12 @@ export default class BasicDatatable extends LightningElement {
         { label: 'Amount', fieldName: 'Amount__c' },
     ];
 
+    name = 'Ramakrishna Reddy';
+    source = 'Salesforces admin & developer';
+    handlerchange(event){
+        this.name = event.target.value ;
+    }
+    handlerpass(event){
+        this.source = event.target.value;
+    }
 }

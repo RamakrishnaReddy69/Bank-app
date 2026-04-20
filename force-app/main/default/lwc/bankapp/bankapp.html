@@ -6,7 +6,15 @@
             columns={columns}>
         </lightning-datatable>
     </div>
-    <lightning-input label=" Name" placeholder="Name" value={name}>
+    <lightning-input label=" Name" placeholder="Name" onchange={handlerchange}>
     </lightning-input>
-    <lightning-input label="Password" value={password} placeholder="Password"></lightning-input>
+    <lightning-input label="Password" value={password} placeholder="Password"
+        onchange={handlerpass}></lightning-input>
+
+    <div>
+        <h1> <b>Resoure details</b></h1>
+        <p>Name : {name}</p>
+        <p> Soures pakage : {source}</p>
+    </div>
+
 </template>
